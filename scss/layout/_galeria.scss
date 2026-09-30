@@ -1,0 +1,94 @@
+@use "../utilities/variable" as *;
+@use "../utilities/extend" as *;
+@use "../utilities/mixin" as *;
+
+// movil
+.escritorio {
+    display: none;
+}
+
+
+// vista de escritorio
+.foto_artista1 {
+    grid-area: artista1;
+}
+
+.foto_artista2 {
+    grid-area: artista2;
+}
+
+.foto_artista3 {
+    grid-area: artista3;
+}
+
+.foto_artista4 {
+    grid-area: artista4;
+}
+
+.foto_artista5 {
+    grid-area: artista5;
+}
+
+.grid-section-main {
+    @include grid(1fr, null, null, 2rem);
+    justify-items: center;
+    align-items: start;
+    text-align: center;
+    width: 100%;
+}
+
+.grid-section-artista {
+    @include grid(1fr,null,"titulo" "artista1" "artista2" "artista3" "artista4" "artista5",1.5rem);
+    width: auto;
+    justify-items: center;
+
+    figure {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+
+        &:focus {
+            box-shadow: $shadow-focus-galeria;
+        }
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+
+
+@include escritorio {
+    .grid-section-main {
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: stretch;
+        align-content: center;
+        gap: 2rem;
+        margin-left: 0;
+        margin-right: 0;
+        max-width: 1200px;
+        margin-inline: auto;
+    }
+
+    .grid-section-artista {
+        
+        @include grid-galeria(1fr 1fr, max-content repeat(4, 400px), "titulo  titulo" "artista1  artista4"
+            "artista1  artista3" "artista2  artista5" "artista2  artista5", null,center, stretch, center, 1.5rem, 2rem);
+        
+    }
+
+    .movil {
+        display: none;
+    }
+
+    .escritorio {
+        display: block;
+    }
+}

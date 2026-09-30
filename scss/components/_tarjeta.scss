@@ -1,0 +1,9 @@
+@use "../utilities/variable" as *;
+@use "../utilities/extend" as *;
+@use "../utilities/mixin" as *;
+
+
+
+.tarjeta2 {
+    @extend %tarjeta2;
+}

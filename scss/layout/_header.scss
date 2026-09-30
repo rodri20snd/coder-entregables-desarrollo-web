@@ -1,0 +1,49 @@
+@use "../utilities/variable" as *;
+@use "../utilities/extend" as *;
+@use "../utilities/mixin" as *;
+
+header {
+    @extend %header;
+
+    .btn-inicio {
+        @extend %btn-inicio;
+    }
+
+    .hamburgesa {
+        color: $color-boton;
+        border: 1px solid $color-textos;
+        font-size: 2rem;
+    }
+
+    .logo-main {
+        width: 12vw;
+        min-width: 90px;
+        height: auto;
+    }
+
+    .navbar-nav a.btn-inicio {
+        display: inline-block;
+        transition: all 0.3s ease;
+        padding: 8px 12px;
+        text-decoration: none;
+        color: $color-boton;
+
+        &:visited {
+            color: $color-visited;
+        }
+
+        &:hover {
+            text-decoration: underline;
+            color: $color-hover;
+            border-radius: 80px;
+            border: none;
+            padding: 8px 12px;
+            background-color: $color-hover-background;
+        }
+
+        &:active {
+            transform: translateY(5px);
+            transition: 0.1s;
+        }
+    }
+}

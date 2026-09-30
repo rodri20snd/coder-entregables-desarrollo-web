@@ -1,0 +1,88 @@
+@use "../utilities/variable" as *;
+@use "../utilities/extend" as *;
+@use "../utilities/mixin" as *;
+
+main {
+
+    @extend %main;
+    
+
+    p {
+        background-color: $color-textos;
+        width: 100%;
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+
+    figcaption {
+        color: $color-figcaption;
+        font-size: 1rem;
+    }
+
+    .title {
+
+        font-weight: 700;
+        font-style: normal;
+        font-size: 64px;
+        background-color: $color-titulos;
+        width: 100%;
+        max-width: 800px;
+        padding: 0.5rem;
+        text-align: center;
+    }
+
+    .subtitle {
+        font-weight: 300;
+        font-style: normal;
+        font-size: 40px;
+        text-align: center;
+        background-color: $color-textos;
+        width: 100%;
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+        border: $borde-subtitulo;
+        transition: 0.3s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        &:active {
+            transform: translateY(5px);
+        }
+
+    }
+
+    .titulo_artistas {
+        grid-area: titulo;
+        width: fit-content;
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 0.5rem 1.5rem;
+    }
+
+    .contacto {
+        background-color: $color-contacto;
+        text-decoration: underline;
+
+        &:focus {
+             box-shadow: $shadow-focus;
+        }
+    }
+
+    .img1 {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .mapa {
+        max-width: 800px;
+        margin: 2rem;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    }
+    
+}

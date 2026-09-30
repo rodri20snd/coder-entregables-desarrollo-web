@@ -1,0 +1,58 @@
+@use "../utilities/variable" as *;
+@use "../utilities/extend" as *;
+@use "../utilities/mixin" as *;
+
+
+footer {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 15px;
+    text-decoration: underline;
+    background-color: $color-footer;
+    width: 100%;
+    padding: 1rem 2rem;
+    @include flex(null,space-between,center,null);
+    margin-top: 2rem;
+
+    .copyright {
+        color: rgb(0, 0, 0);
+        background-color: $color-copyright;
+        width: 100%;
+        max-width: 500px;
+        padding: 0.5rem;
+        @include flex(null,center,center,null);
+        
+    }
+    
+    ul li {
+        width: 5%;
+        height: auto;
+        list-style: none;
+    }
+
+    .footer-iconos {
+        @include flex(column,center,flex-end,0.5rem);
+        list-style: none;
+        a {
+            display: inline-block;
+            transition: all 0.3s;
+            min-width: 30px;
+
+            &:hover {
+                text-decoration: underline;
+                color: $color-hover;
+
+                border-radius: 6px;
+                border: none;
+                padding: 2px;
+                background-color: $color-hover-background;
+            }
+
+            &:active {
+                transform: translateY(5px);
+            }
+
+        }
+
+    }
+}

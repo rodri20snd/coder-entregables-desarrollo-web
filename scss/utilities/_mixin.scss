@@ -1,0 +1,35 @@
+@mixin flex($direccion, $justificar, $alinear, $gap) {
+    display: flex;
+    flex-direction: $direccion;
+    justify-content: $justificar ;
+    align-items: $alinear ;
+    gap: $gap ;
+}
+
+@mixin grid($columnas, $filas, $areas, $gap) {
+    display: grid;
+    grid-template-columns: $columnas;
+    grid-template-rows: $filas;
+    grid-template-areas: $areas;
+    gap: $gap;
+}
+
+@mixin grid-galeria($columnas, $filas, $areas, $gap,$justificar, $alinear1, $alinear2, $gapfilas,$gapcolumnas) {
+    display: grid;
+    grid-template-columns: $columnas;
+    grid-template-rows: $filas;
+    grid-template-areas: $areas;
+    gap: $gap;
+    justify-items: $justificar;
+    align-items: $alinear1;
+    align-content: $alinear2;
+    row-gap: $gapfilas;
+    column-gap: $gapcolumnas;
+}
+
+
+@mixin escritorio {
+    @media (min-width:1024px) {
+        @content;
+    }
+}

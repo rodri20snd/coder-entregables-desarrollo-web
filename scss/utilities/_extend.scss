@@ -1,0 +1,36 @@
+@use "variable" as *;
+@use "mixin" as *;
+
+%header {background-color: $color-main;
+ width: 100%;
+ max-width: 100%;
+ margin-bottom: 1.5rem;
+}
+
+%btn-inicio {font-family:$font;
+ font-weight: bold;
+ font-style: normal;
+ @include flex(null,space-evenly,center,1rem);
+ font-size: clamp(0.9rem, 2.5vw, 1.3rem);
+ max-width: 100%;
+ list-style: none;
+} 
+
+%main {font-family:$font;
+ font-weight: 300;
+ font-style: normal;
+ font-size: 18px;
+ @include flex(column,space-between,center,2rem);
+ padding: 0.2rem;
+}
+
+%tarjeta2 {width: 60%;
+@include flex(column,center,center,null);
+
+}
+
+%section {@include flex(column,flex-start,center,null);
+
+ margin-left: 2rem;
+ margin-right: 2rem;
+}
