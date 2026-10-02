@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Music Store | Productos</title>
-   <!-- css bootstrap -->
+    <!-- css AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- css bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- css -->
     <link rel="stylesheet" href="../css/style.css">
 
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">
-                 <img class="logo-main" src="../img/logo_main.png" alt="logo de la empresa">
+                    <img class="logo-main" src="../img/logo_main.png" alt="logo de la empresa">
                 </a>
                 <button class="navbar-toggler ms-auto hamburgesa" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -35,7 +39,8 @@
                             <a class="nav-link btn-inicio" href="./artistas.html">Artistas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link btn-inicio" aria-current="page" href="./sobre_nosotros.html">Sobre Nosotros</a>
+                            <a class="nav-link btn-inicio" aria-current="page" href="./sobre_nosotros.html">Sobre
+                                Nosotros</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link btn-inicio" href="./contacto.html">Contacto</a>
@@ -48,37 +53,46 @@
     <main>
         <h1 class="title">Conoce nuestros productos</h1>
         <section class="grid-section-main">
-            <article class="tarjeta">
-                <h2 class="subtitle">Guitarras electricas</h2>
-                <figure tabindex="0">
-                    <img class="img1" src="../img/les_paul.jpg" alt="Guitarra electrica color negra">
-                    <figcaption>Les Paul Custom black</figcaption>
-                </figure>
-                <p>En Music Store tenemos los mejores modelos de guitarras electircas</p>
-            </article>
-            <article class="tarjeta">
-                <h2 class="subtitle">Baterias acusticas</h2>
-                <figure tabindex="0">
-                    <img class="img1" src="../img/bateria.jpg" alt="bateria acustica instrumento musical">
-                    <figcaption>Bateria Catalina yellow</figcaption>
-                </figure>
-                <p>Conoce tambien nuestra linea de baterias acusticas</p>
-            </article>
+            <div data-aos="zoom-in-up" data-aos-duration="800">
+                <article class="tarjeta">
+                    <h2 class="subtitle">Guitarras electricas</h2>
+                    <figure tabindex="0">
+                        <img class="img1" src="../img/les_paul.jpg" alt="Guitarra electrica color negra">
+                        <figcaption>Les Paul Custom black</figcaption>
+                    </figure>
+                    <p>En Music Store tenemos los mejores modelos de guitarras electircas</p>
+                </article>
+            </div>
+            <div data-aos="zoom-in-up" data-aos-duration="800">
+                <article class="tarjeta">
+                    <h2 class="subtitle">Baterias acusticas</h2>
+                    <figure tabindex="0">
+                        <img class="img1" src="../img/bateria.jpg" alt="bateria acustica instrumento musical">
+                        <figcaption>Bateria Catalina yellow</figcaption>
+                    </figure>
+                    <p>Conoce tambien nuestra linea de baterias acusticas</p>
+                </article>
+            </div>
         </section>
     </main>
-     <footer>
-            <p class="copyright">Todos los derechos reservados 2026</p>
-            <ul class="footer-iconos">
-                <li><a href="https://www.instagram.com/" target="_blank"><img src="../img/instagram.png"
-                            alt="logo de instagram"></a></li>    
-                <li><a href="https://www.facebook.com/" target="_blank"><img src="../img/facebook.png"
-                            alt="logo de Facebook"></a></li> 
-            </ul>
-        </footer>
-<!-- script bootstrap -->
+    <footer>
+        <p class="copyright">Todos los derechos reservados 2026</p>
+        <ul class="footer-iconos">
+            <li><a href="https://www.instagram.com/" target="_blank"><img src="../img/instagram.png"
+                        alt="logo de instagram"></a></li>
+            <li><a href="https://www.facebook.com/" target="_blank"><img src="../img/facebook.png"
+                        alt="logo de Facebook"></a></li>
+        </ul>
+    </footer>
+    <!-- script bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <!-- script AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 

@@ -1,14 +1,19 @@
 @use "../utilities/variable" as *;
 @use "../utilities/extend" as *;
 @use "../utilities/mixin" as *;
-img {max-width: 100%;
+
+img {
+    max-width: 100%;
 }
-body {font-family: $font;
+
+body {
+    font-family: $font;
     background-image: $img-main;
     color: rgb(0, 0, 0);
-
+    overflow-x: hidden;
 }
 
+
 section {
-   @extend %section;
+    @extend %section;
 }

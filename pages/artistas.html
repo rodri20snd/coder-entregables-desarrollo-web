@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Music Store | Artistas</title>
+    <!-- css AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- css bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -59,22 +61,22 @@
                     <div class="carousel-item">
                         <img src="../img/david_gilmour.jpg" class="d-block w-100"
                             alt="David Gilmour con su guitarra stratocaster">
-                            <figcaption>David Gilmour - Pink Floyd</figcaption>
+                        <figcaption>David Gilmour - Pink Floyd</figcaption>
                     </div>
                     <div class="carousel-item">
                         <img src="../img/neil_peart.jpg" class="d-block w-100"
                             alt="Neil Peart tocando en vivo en un show de Rush">
-                            <figcaption>Neil Peart - Rush</figcaption>
+                        <figcaption>Neil Peart - Rush</figcaption>
                     </div>
                     <div class="carousel-item">
                         <img src="../img/steve_harris.jpg" class="d-block w-100"
                             alt="Steve Harris con su bajo Precision en un show en vivo">
-                             <figcaption>Steve Harris - Iron Maiden</figcaption>
+                        <figcaption>Steve Harris - Iron Maiden</figcaption>
                     </div>
                     <div class="carousel-item">
                         <img src="../img/wes_borland.jpg" class="d-block w-100"
                             alt="Wes Borland tocando la guitarra en vivo">
-                            <figcaption>Wes Borland - Limp Bizkit</figcaption>
+                        <figcaption>Wes Borland - Limp Bizkit</figcaption>
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
@@ -92,26 +94,36 @@
         <div class="escritorio">
             <section class="grid-section-artista">
                 <h2 class="subtitle titulo_artistas">Galería de músicos</h2>
-                <figure class="foto_artista1" tabindex="0">
-                    <img src="../img/jimmy_page.jpg" alt="Jimmy Page tocando en vivo">
-                    <figcaption>Jimmy Page - Led Zeppelin</figcaption>
-                </figure>
-                <figure class="foto_artista2" tabindex="0">
-                    <img src="../img/david_gilmour.jpg" alt="David Gilmour con su guitarra stratocaster">
-                    <figcaption>David Gilmour - Pink Floyd</figcaption>
-                </figure>
-                <figure class="foto_artista3" tabindex="0">
-                    <img src="../img/neil_peart.jpg" alt="Neil Peart tocando en vivo en un show de Rush">
-                    <figcaption>Neil Peart - Rush</figcaption>
-                </figure>
-                <figure class="foto_artista4" tabindex="0">
-                    <img src="../img/wes_borland.jpg" alt="Wes Borland tocando la guitarra en vivo">
-                    <figcaption>Wes Borland - Limp Bizkit</figcaption>
-                </figure>
-                <figure class="foto_artista5" tabindex="0">
-                    <img src="../img/steve_harris.jpg" alt="Steve Harris con su bajo Precision en un show en vivo">
-                    <figcaption>Steve Harris - Iron Maiden</figcaption>
-                </figure>
+                <div class="foto_artista1">
+                    <figure data-aos="fade-right" data-aos-duration="800" tabindex="0">
+                        <img src="../img/jimmy_page.jpg" alt="Jimmy Page tocando en vivo">
+                        <figcaption>Jimmy Page - Led Zeppelin</figcaption>
+                    </figure>
+                </div>
+                <div class="foto_artista2">
+                    <figure data-aos="fade-right" data-aos-duration="800" tabindex="0">
+                        <img src="../img/david_gilmour.jpg" alt="David Gilmour con su guitarra stratocaster">
+                        <figcaption>David Gilmour - Pink Floyd</figcaption>
+                    </figure>
+                </div>
+                <div class="foto_artista3">
+                    <figure data-aos="fade-left" data-aos-duration="800" tabindex="0">
+                        <img src="../img/neil_peart.jpg" alt="Neil Peart tocando en vivo en un show de Rush">
+                        <figcaption>Neil Peart - Rush</figcaption>
+                    </figure>
+                </div>
+                <div class="foto_artista4">
+                    <figure data-aos="fade-left" data-aos-duration="800" tabindex="0">
+                        <img src="../img/wes_borland.jpg" alt="Wes Borland tocando la guitarra en vivo">
+                        <figcaption>Wes Borland - Limp Bizkit</figcaption>
+                    </figure>
+                </div>
+                <div class="foto_artista5">
+                    <figure data-aos="fade-left" data-aos-duration="800" tabindex="0">
+                        <img src="../img/steve_harris.jpg" alt="Steve Harris con su bajo Precision en un show en vivo">
+                        <figcaption>Steve Harris - Iron Maiden</figcaption>
+                    </figure>
+                </div>
             </section>
         </div>
     </main>
@@ -128,6 +140,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <!-- script AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
