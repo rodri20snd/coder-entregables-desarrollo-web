@@ -1,5 +1,5 @@
-@use "variable" as *;
-@use "mixin" as *;
+@use "variables" as *;
+@use "mixins" as *;
 
 %header {background-color: $color-main;
  width: 100%;
