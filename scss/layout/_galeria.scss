@@ -38,11 +38,11 @@
 }
 
 .grid-section-artista {
-    @include grid(1fr,null,"titulo" "artista1" "artista2" "artista3" "artista4" "artista5",1.5rem);
+    @include grid(1fr, null, "titulo" "artista1" "artista2" "artista3" "artista4" "artista5", 1.5rem);
     width: auto;
     justify-items: center;
 
-    & > div {
+    &>div {
         width: 100%;
         height: 100%;
         display: flex;
@@ -68,9 +68,7 @@
     }
 }
 
-
-
-@include escritorio {
+@include tablet {
     .grid-section-main {
         grid-template-columns: 1fr 1fr;
         justify-items: center;
@@ -84,11 +82,15 @@
     }
 
     .grid-section-artista {
-        
+
         @include grid-galeria(1fr 1fr, max-content repeat(4, 400px), "titulo  titulo" "artista1  artista4"
-            "artista1  artista3" "artista2  artista5" "artista2  artista5", null,center, stretch, center, 1.5rem, 2rem);
-        
+            "artista1  artista3" "artista2  artista5" "artista2  artista5", null, center, stretch, center, 1.5rem, 2rem);
+
     }
+}
+
+@include escritorio {
+    
 
     .movil {
         display: none;
