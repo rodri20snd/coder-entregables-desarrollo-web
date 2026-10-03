@@ -261,6 +261,14 @@ main .mapa {
     display: block;
   }
 }
+.movil #carouselExample .carousel-inner {
+  height: 450px;
+}
+.movil #carouselExample .carousel-item img {
+  height: 450px;
+  object-fit: cover;
+}
+
 footer {
   font-weight: 500;
   font-style: normal;
