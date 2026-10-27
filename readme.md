@@ -1,12 +1,24 @@
-# Proyecto Desarrollo Web - Music Store 🎸
-Un sitio web interactivo para una tienda de música que incluye un catálogo de productos, información sobre nosotros y una galería de artistas destacados.
-Sitio web desarrollado para el curso de Desarrollo Web en Coderhouse.
-## Tecnologías utilizadas
-- HTML5 semántico
-- CSS3 y Sass (SCSS modular)
-- Responsive Design (Mobile First / Desktop)
-- Bootstrap / Grid / Flexbox
+# Music Store - Proyecto Final de Desarrollo Web
+Sitio web interactivo para una tienda de instrumentos musicales que incluye catálogo de productos, galería de artistas destacados, información sobre la empresa y formulario de contacto.
+Desarrollado para el curso de **Desarrollo Web en Coderhouse**.
+---
+## Sitio Web (Deploy)
+* **Link en Vercel:** [https://tu-proyecto.vercel.app](https://tu-proyecto.vercel.app) *(reemplazá con tu URL real)*
+---
+## Tecnologías y herramientas utilizadas
+- **HTML5:** Estructura semántica, accesibilidad (`alt`, jerarquía de encabezados) y SEO on-page (`meta description`, `keywords`).
+- **CSS3 y Sass (SCSS):** Arquitectura modular (partials, variables, mixins con parámetros, extend y nesting).
+- **Responsive Design:** Diseño adaptativo para mobile, tablet y desktop mediante CSS Grid, Flexbox y Media Queries.
+- **Bootstrap 5:** Navbar colapsable interactiva, carrusel y componentes.
+- **Animaciones:** Animación nativa con CSS/SCSS y librería externa **AOS (Animate On Scroll)**.
+---
 ## Estructura del proyecto
-- `index.html`, `galeria.html`, `contacto.html`, etc.
-- `scss/`: arquitectura modular con partials (`base/`, `layout/`, `components/`, `utilities/`).
-- `css/`: archivo compilado `style.css`.
+- `index.html` (Página principal de inicio)
+- `pages/`
+  - `nuestros_productos.html` (Catálogo de instrumentos)
+  - `artistas.html` (Galería de músicos)
+  - `sobre_nosotros.html` (Historia y ubicación con mapa)
+  - `contacto.html` (Formulario de contacto y presupuestos)
+- `scss/`: Estilos modulares organizados por carpetas (`base/`, `layout/`, `components/`, `utilities/`).
+- `css/`: Archivo CSS compilado (`style.css`).
+- `img/`: Recursos multimedia, imágenes e íconos.
