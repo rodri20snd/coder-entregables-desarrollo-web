@@ -3,7 +3,7 @@ Sitio web interactivo para una tienda de instrumentos musicales que incluye cat�
 Desarrollado para el curso de **Desarrollo Web en Coderhouse**.
 ---
 ## Sitio Web (Deploy)
-* **Link en Vercel:** [https://tu-proyecto.vercel.app](https://tu-proyecto.vercel.app) *(reemplazá con tu URL real)*
+* **Link en Vercel:** [https://coder-entregables-desarrollo-web.vercel.app](https://coder-entregables-desarrollo-web.vercel.app) 
 ---
 ## Tecnologías y herramientas utilizadas
 - **HTML5:** Estructura semántica, accesibilidad (`alt`, jerarquía de encabezados) y SEO on-page (`meta description`, `keywords`).
